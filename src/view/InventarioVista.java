@@ -5,7 +5,7 @@ import java.util.Scanner;
 import modelo.Producto;
 
 
-class InventarioVista {
+public class InventarioVista {
     private Scanner scanner;
     
     public InventarioVista() {

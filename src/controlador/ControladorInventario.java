@@ -1,5 +1,8 @@
 package controlador;
 import java.util.List;
+import modelo.BaseDeDatos;
+import modelo.Producto;
+import view.InventarioVista;
 
 public class ControladorInventario {
     private BaseDeDatos baseDatos;
@@ -11,7 +14,7 @@ public class ControladorInventario {
         this.vista = vista;
         this.salir = false;
     }
-    
+
     public void iniciar() {
         vista.mostrarMensaje("Bienvenido al Sistema de Inventario de DevSolutions");
         

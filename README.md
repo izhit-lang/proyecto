@@ -1,18 +1,50 @@
-## Getting Started
+Sistema de Inventario en Java
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Sistema de gestión de inventario desarrollado con Java y arquitectura MVC.
 
-## Folder Structure
+Características
 
-The workspace contains two folders by default, where:
+· Gestión completa de productos (agregar, buscar, listar, eliminar)
+· Interfaz de consola interactiva
+· Validación de datos de entrada
+· Almacenamiento en memoria
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Estructura de Carpetas
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+El workspace contiene dos carpetas por defecto:
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+· src: la carpeta para mantener los archivos fuente
+· lib: la carpeta para mantener las dependencias
 
-## Dependency Management
+Mientras tanto, los archivos de salida compilados se generan en la carpeta bin por defecto.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Estructura del Proyecto
+
+El proyecto sigue el patrón MVC:
+
+· Modelo: Producto.java, BaseDeDatos.java
+· Vista: InventarioVista.java
+· Controlador: ControladorInventario.java
+· Main: App.java
+
+Como Ejecutar
+
+```bash
+# Compilar
+javac -d bin src/*.java src/controlador/*.java src/modelo/*.java src/view/*.java
+
+# Ejecutar
+java -cp bin App
+```
+
+Funciones Disponibles
+
+1. Agregar producto - Registrar nuevos productos en el inventario
+2. Buscar producto - Encontrar productos por SKU
+3. Mostrar todos - Listar todos los productos registrados
+4. Eliminar producto - Remover productos del inventario
+5. Salir - Cerrar la aplicación
+
+Gestión de Dependencias
+
+La vista JAVA PROJECTS te permite gestionar tus dependencias. Más detalles pueden encontrarse aquí.
